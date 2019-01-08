@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <title>Cadastro de Pessoas</title>
+
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <!-- Início do sript JQuery JS -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <!-- Fim do script JQuery JS -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+          <!-- Bootstrap Core CSS -->
+          <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+          <!-- MetisMenu CSS -->
+          <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+          <!-- Custom CSS -->
+          <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+          <!-- Custom Fonts -->
+          <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+          <style>
+          body{
+          background-color:#ffffff;
+          }
+          .container{
+           padding-top:50px;
+          }
+          </style>
+      </head>
+
+      <body>
+
+      <div class="container">
+      	<div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12"><!-- Conteiner Geral -->
+
+                <form action="salvando_usuarios.php" method="post"><!-- Inicio Form -->
+
+                  <div class="panel panel-default"><!-- Inicio Panel Geral -->
+                      <div class="panel-heading"><!-- Titulo Panel -->
+                          <a href="#" style="outline:none;"><p class="fa fa-file-o" style="font-size:20px; margin-top:10px; color:#bbbbbb;"><small style="font-family:arial; font-size:15px;"> Cadastro de Usuários</small></p></a>
+                      </div><!-- Fim Titulo Painel  -->
+                        <div class="panel-body"><!-- Corpo Panel  -->
+
+                      			<div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+                                <div class="col-lg-5 col-md-6 col-sm-6">
+                                  <label for="ex1">Nome:</label>
+                                  <input type="text" class="form-control" maxlength="20"  name="nome" placeholder="Informe seu nome"><br>
+                                </div>
+                      			</div><!-- Fim Div -->
+
+                      			<div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+                              <div class="col-lg-5 col-md-6 col-sm-6">
+                                <label for="ex1">Email:</label>
+                                <input type="email" class="form-control" maxlength="20"  name="email" placeholder="usuario@usuario.com"><br>
+                              </div>
+                            </div><!-- Fim Div -->
+
+                            <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+                              <div class="col-lg-5 col-md-6 col-sm-6">
+                                <label for="ex1">Senha:</label>
+                                <input type="text" class="form-control" maxlength=15  name="senha" placeholder="Informe sua senha"><br>
+                              </div>
+                            </div><!-- Fim Div -->
+
+                            <div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Div -->
+                              <div class="col-lg-5 col-md-6 col-sm-6">
+                                <label for="ex1">Confirmar Senha:</label>
+                                <input type="text" class="form-control" maxlength=15  name="confirma_senha" placeholder="Confirme sua senha"><br>
+                              </div>
+                            </div><!-- Fim Div -->
+
+                      			<div class="col-lg-12 col-md-12 col-sm-12"><!-- Inicio Button -->
+                              <div class="col-lg-2 col-md-2 col-sm-3">
+                                <input type="submit" class="btn btn-success btn-lg btn-block" style="margin-top:17px; outline:none;" value="Cadastrar">
+                              </div>
+                            </div><!-- Fim Button -->
+
+                  </form><!-- Fim Form -->
+                </div><!-- Fim Corpo Panel Geral -->
+            </div><!-- Fim Panel Panel-Default -->
+        </div><!-- Fim Conteiner Geral -->
+  	</div> <!-- Fim da Row -->
+  </div>
+</body>
+</html>
