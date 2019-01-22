@@ -58,16 +58,16 @@
                 $usuariosJson = file_get_contents("usuarios.json");
 
                 // Transformando em array
-                $listaUsuarios = json_decode($usuariosJson, true);
+                $usuarioArray = json_decode($usuariosJson, true);
 
                 // Adicionando na última posição do array
-                array_push($listaUsuarios["usuarios"], $novoUsuario);
+                array_push($usuarioArray["usuarios"], $novoUsuario);
 
                 // Transformando o array em Json
-                $arrayJson = json_encode($listaUsuarios);
+                $json = json_encode($listaUsuarios);
 
                 // abrindo arquivo usuarios.json 
-                $enviando = file_put_contents("usuarios.json", $arrayJson);
+                $enviandoDados = file_put_contents("usuarios.json", $json);
             }
         ?>
     </div>
