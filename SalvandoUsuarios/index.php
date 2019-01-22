@@ -64,10 +64,10 @@
                 array_push($usuarioArray["usuarios"], $novoUsuario);
 
                 // Transformando o array em Json
-                $json = json_encode($listaUsuarios);
+                $dadosFinais = json_encode($usuarioArray);
 
                 // abrindo arquivo usuarios.json 
-                $enviandoDados = file_put_contents("usuarios.json", $json);
+                $enviandoDados = file_put_contents("usuarios.json", $dadosFinais);
             }
         ?>
     </div>
